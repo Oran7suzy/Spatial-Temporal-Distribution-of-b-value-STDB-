@@ -16,7 +16,7 @@ Just import a seismic catalog.
 8.Magnitude
 
 # When estimating the b-value using the STDB calculator, refer to:
-
+Weicheng Gong, Huayuan Cheng, Yajing Gao, Qing Li, and Yunqiang Sun (2023). Spatial-Temporal Distribution of b-value in the Eastern Tibetan Plateau. (in revision)
 
 # STDB calculator's main features:
 1. Calculate the b-value for the entire catalog
@@ -46,5 +46,18 @@ Just import a seismic catalog.
 2. WW2005 model Woessner & Wiemer (2005)
 
 # Other references
+Aki, K. (1965). Maximum likelihood estimate of b in the formula logN=a-bM and its confidence limits. Bulletin of the Earthquake Research Institute, University of Tokyo, 43, 237-239.
+Amorese, D. (2007). Applying a change-point detection method on frequency-magnitude distributions. Bulletin of the Seismological Society of America, 97(5), 1742-1749. https://doi.org/10.1785/0120060181
+Cao, A., & Gao, S. S. (2002). Temporal variation of seismic b-values beneath northeastern Japan island arc. Geophysical Research Letters, 29(9), 1334. https://doi.org/10.1029/2001GL013775
+Godano, C. (2017). A new method for the estimation of the completeness magnitude. Physics of the Earth and Planetary Interiors, 263, 7-11. https://doi.org/10.1016/j.pepi.2016.12.003
+Gulia, L., & Wiemer, S. (2019). Real-time discrimination of earthquake foreshocks and aftershocks. Nature, 574(7777), 193-199. https://doi.org/10.1038/s41586-019-1606-4
+Li, L., Luo, G., & Liu, M. (2023). The K-M Slope: A Potential Supplement for b-Value. Seismological Research Letters. https://doi.org/10.1785/0220220268
+Lombardi, A. M. (2021). A Normalized Distance Test for Co‐Determining the Completeness Magnitude and b‐Value of Earthquake Catalogs. Journal of Geophysical Research: Solid Earth, 126(3). https://doi.org/10.1029/2020jb021242
+Ogata, Y., & Katsura, K. (1993). Analysis of temporal and spatial heterogeneity of magnitude frequency distribution inferred from earthquake catalogues. Geophysical Journal International, 113(3), 727-738. https://doi.org/10.1111/j.1365-246X.1993.tb04663.x
+Pacheco, J. F., Scholz, C. H., & Sykes, L. R. (1992). Changes in frequency-size relationship from small to large earthquakes. Nature, 355(6355), 71-73. https://doi.org/10.1038/355071a0
+Telesca, L., Lovallo, M., Ramirez-Rojas, A., & Flores-Marquez, L. (2013). Investigating the time dynamics of seismicity by using the visibility graph approach: Application to seismicity of Mexican subduction zone. Physica A: Statistical Mechanics and its Applications, 392(24), 6571-6577. https://doi.org/10.1016/j.physa.2013.08.078
+van der Elst, N. J. (2021). B‐Positive: A Robust Estimator of Aftershock Magnitude Distribution in Transiently Incomplete Catalogs. Journal of Geophysical Research: Solid Earth, 126(2). https://doi.org/10.1029/2020jb021027
+Wiemer, S., & Wyss, M. (2000). Minimum magnitude of completeness in earthquake catalogs: Examples from Alaska, the western United States, and Japan. Bulletin of the Seismological Society of America, 90(4), 859-869. https://doi.org/10.1785/0119990114
+Woessner, J., & Wiemer, S. (2005). Assessing the quality of earthquake catalogues: Estimating the magnitude of completeness and its uncertainty. Bulletin of the Seismological Society of America, 95(2), 684-698. https://doi.org/10.1785/0120040007
 
    
