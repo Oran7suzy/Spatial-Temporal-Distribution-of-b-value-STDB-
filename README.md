@@ -16,7 +16,7 @@ Just import a seismic catalog.
 8.Magnitude
 
 # When estimating the b-value using the STDB calculator, refer to:
-Linxuan Li, Gang Luo, and Mian Liu (2023). K-M slope: A potential supplement to the b-value. Seismological Research Letters, 94, 1892-1899. doi: 10.1785/0220220268.
+
 
 # STDB calculator's main features:
 1. Calculate the b-value for the entire catalog
@@ -44,5 +44,7 @@ Linxuan Li, Gang Luo, and Mian Liu (2023). K-M slope: A potential supplement to 
 # Functions involved in the STDB calculator's synthetic seismic catalog:
 1. OK1993 model Ogata & Katsura (1993)
 2. WW2005 model Woessner & Wiemer (2005)
+
+# Other references
 
    
