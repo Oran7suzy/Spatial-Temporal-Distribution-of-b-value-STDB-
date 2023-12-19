@@ -1,4 +1,4 @@
-C     Spatial Temporal Distribution of b-value (STDB)
+C     Spatial Distribution of b-value (STDB)
 C
 C     A versatile b-value calculator. Used for calculating time and space variations of b-values, 
 C              it includes eight Mc calculation methods and four b-value calculation methods. 
@@ -79,11 +79,11 @@ C     Test the results of the artificial earthquake catalog: CYC_B.TXT; CYC_MC.T
       GOTO 546
       END IF
       
-      WRITE (*,*) '¦Ì=   ¦Ò=   b=    !¦Ì<=M_max'
+      WRITE (*,*) 'Î¼=   Ïƒ=   b=    !Î¼<=M_max'
       READ (*,*) MIU,XIGMA,BB2
       WRITE (*,*) 'Earthquake magnitude range:  Min=  Max='
       READ (*,*) MAG_MIN,MAG_MAX
-      WRITE (*,*) 'Minimum seismic data£º'
+      WRITE (*,*) 'Minimum seismic dataï¼š'
       READ (*,*) LIMI
       WRITE (*,*) 'Whether to cycle test: 1-yes 2-no'
       READ (*,*) CYC
@@ -103,11 +103,11 @@ C     Test the results of the artificial earthquake catalog: CYC_B.TXT; CYC_MC.T
       WRITE (*,*) 'Whether to test all Mc methods: 1-yes 2-no '
       READ (*,*) CYC2
       IF (CYC2.EQ.1) THEN
-      WRITE (*,*) 'MBS: Box width (0.5¡ú5)£º'
+      WRITE (*,*) 'MBS: Box width (0.5â†’5)ï¼š'
       READ (*,*) BIN
-      WRITE (*,*) 'MBS: MAGNITUDE INTERVAL (0.1)£º'
+      WRITE (*,*) 'MBS: MAGNITUDE INTERVAL (0.1)ï¼š'
       READ (*,*) JG
-      WRITE (*,*) 'MBS-JS: Stable platform (0.03-0.05)£º'
+      WRITE (*,*) 'MBS-JS: Stable platform (0.03-0.05)ï¼š'
       READ (*,*) BY
       END IF
       GOTO 963
@@ -115,30 +115,30 @@ C     Test the results of the artificial earthquake catalog: CYC_B.TXT; CYC_MC.T
 546   CONTINUE
       
 65    IF (MH.EQ.5) THEN
-      WRITE (*,*) 'Box width (0.5¡ú5)£º'
+      WRITE (*,*) 'Box width (0.5â†’5)ï¼š'
       READ (*,*) BIN
       ELSE IF (MH.EQ.4) THEN
-      WRITE (*,*) 'Stable platform (0.03-0.05)£º'
+      WRITE (*,*) 'Stable platform (0.03-0.05)ï¼š'
       READ (*,*) BY
-      WRITE (*,*) 'MAGNITUDE INTERVAL (0.1)£º'
+      WRITE (*,*) 'MAGNITUDE INTERVAL (0.1)ï¼š'
       READ (*,*) JG
       ELSE IF (MH.EQ.1) THEN
-      WRITE (*,*) 'Significance of KS test (default:0.05)£º'
+      WRITE (*,*) 'Significance of KS test (default:0.05)ï¼š'
       READ (*,*) P
       ELSE IF (MH.EQ.3) THEN
-      WRITE (*,*) 'Goodness of fit (90%¡ú90)£º'
+      WRITE (*,*) 'Goodness of fit (90%â†’90)ï¼š'
       READ (*,*) R
       ELSE IF (MH.EQ.7) THEN
-      WRITE (*,*) 'Differential Convergence Criteria (0.005-0.0001)£º'
+      WRITE (*,*) 'Differential Convergence Criteria (0.005-0.0001)ï¼š'
       READ (*,*) P
       ELSE IF (MH.EQ.8) THEN
-      WRITE (*,*) 'Number of bootstrap samples (default:50)£º'
+      WRITE (*,*) 'Number of bootstrap samples (default:50)ï¼š'
       READ (*,*) CS2
       END IF
       
       
       
-      WRITE (*,*) 'Each Window minimum seismic data£º'
+      WRITE (*,*) 'Each Window minimum seismic dataï¼š'
       READ (*,*) LIMI
 
 244   WRITE (*,*) 'Calculation model:  1-TIME  2-NUMER  3-ENTIRE AREA'
@@ -182,10 +182,10 @@ C     Test the results of the artificial earthquake catalog: CYC_B.TXT; CYC_MC.T
       
 667   IF (CM.EQ.3) GOTO 666
       GOTO 450
-666   WRITE (*,*) 'Start time:  YEAR£»MOUTH£»DAY£»HOUR£»MINUTE'
+666   WRITE (*,*) 'Start time:  YEARï¼›MOUTHï¼›DAYï¼›HOURï¼›MINUTE'
       READ (*,*) TIME_FW1(1),TIME_FW1(2),TIME_FW1(3),TIME_FW1(4)
      1,TIME_FW1(5)
-      WRITE (*,*) 'Deadline:  YEAR£»MOUTH£»DAY£»HOUR£»MINUTE'
+      WRITE (*,*) 'Deadline:  YEARï¼›MOUTHï¼›DAYï¼›HOURï¼›MINUTE'
       READ (*,*) TIME_FW2(1),TIME_FW2(2),TIME_FW2(3),TIME_FW2(4)
      1,TIME_FW2(5)
       
@@ -1767,7 +1767,7 @@ CCCCCCCCCCCC-------EMR-CCCCCCCCC
       IF (I2.EQ.0) GOTO 280
       GOTO 500
 
-C     £¨G-R law£©
+C     ï¼ˆG-R lawï¼‰
 500   MC2=MC
       MA2=SUM(W2(1:I2))*1.0/Y2(I2)*1.0
       BV2=(MA2-MC2)*2.30258509
@@ -1970,7 +1970,7 @@ CCCCCCCCCCCCCCCCCC-------NDT-----CCCCCCCCCCCCCCCCCCC
       MAG_MIN=MINVAL(X(:N))
       CALL RANDOM_SEED()
       
-C     ×Ô¾Ù³éÑù·¨
+C     è‡ªä¸¾æŠ½æ ·æ³•
       DO I=1,CS
       
       SUM_Z=0
@@ -1999,7 +1999,7 @@ C     ×Ô¾Ù³éÑù·¨
       SUM_EN=SUM_EN+INT(LS(J,2))
       END DO
       
-C     ÅÐ¶ÏÊý×éÖÐµÄ²»ÖØ¸´µã
+C     åˆ¤æ–­æ•°ç»„ä¸­çš„ä¸é‡å¤ç‚¹
 C      CALL QSORT(LS(:I1,2),I1,2,1)
 C      ND=0
 C      DO I=1,I1
@@ -2020,7 +2020,7 @@ C      END DO
       CALL CEF(EN(:SUM_EN),ZD(:XS),SUM_EN,MAXVAL(EN(:SUM_EN)),
      1         XS,CO(:XS))
       
-C     ÕÒµ½µ¥´ÎÑù±¾ÖÐ·ûºÏÏÔÖø¶ÈµÄÕð¼¶
+C     æ‰¾åˆ°å•æ¬¡æ ·æœ¬ä¸­ç¬¦åˆæ˜¾è‘—åº¦çš„éœ‡çº§
       DO J=1,XS
       IF (ZD(J).GE.0.95) THEN
       MCB(I)=CO(J)
@@ -2033,7 +2033,7 @@ C     ÕÒµ½µ¥´ÎÑù±¾ÖÐ·ûºÏÏÔÖø¶ÈµÄÕð¼¶
       XS=INT(MAXVAL(MCB(:CS)))*10
       CALL CEF(MCB(:CS),ZD(:XS),CS,MAXVAL(MCB(:CS)),XS,CO(:XS))
       
-C     ÕÒµ½È«²¿Ñù±¾ÖÐ·ûºÏÏÔÖø¶ÈµÄÕð¼¶
+C     æ‰¾åˆ°å…¨éƒ¨æ ·æœ¬ä¸­ç¬¦åˆæ˜¾è‘—åº¦çš„éœ‡çº§
       DO J=1,XS
       IF (ZD(J).GE.0.95) THEN
       MC=CO(J)
@@ -2406,7 +2406,7 @@ CCCCCCCCCCCCCCCCC---Generate artificial earthquake catalog---CCCCC
       DOUBLE PRECISION PP2,X,Y,Y2,XIGMA,MIU,BB2,MAG_MAX,MAG_MIN,A_X,
      1                 S_CDF,B_X,XS2,XS
       
-C     ¼ÆËã¹Û²âµÄµØÕð¸ÅÂÊÃÜ¶Èº¯Êý
+C     è®¡ç®—è§‚æµ‹çš„åœ°éœ‡æ¦‚çŽ‡å¯†åº¦å‡½æ•°
       A_X=-100
       IF (ML.EQ.1) THEN
       DO I=1,TEMP
